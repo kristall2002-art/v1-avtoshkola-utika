@@ -606,6 +606,16 @@ html[data-hc="1"] :focus-visible{outline:3px solid #ffe14d;outline-offset:2px}
 <link rel="stylesheet" href="css/nevo.css?v=20261112f">
 <link rel="stylesheet" href="css/school.css?v=1">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "DrivingSchool", "name": "Автошкола «Ютика»", "telephone": "+7 (496) 793-32-25", "email": "yutikasite@yandex.ru", "sameAs": [], "address": {"@type": "PostalAddress", "streetAddress": "Каширское ш., 17А", "addressLocality": "Домодедово", "addressCountry": "RU"}, "geo": {"@type": "GeoCoordinates", "latitude": 55.4448879, "longitude": 37.7676565}, "department": [], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Обучение вождению", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Course", "name": "B  — стандартный — Стоимость"}, "price": "30000", "priceCurrency": "RUB"}, {"@type": "Offer", "itemOffered": {"@type": "Course", "name": "B  — онлайн-курс — Стоимость"}, "price": "30000", "priceCurrency": "RUB"}, {"@type": "Offer", "itemOffered": {"@type": "Course", "name": "Переподготовка  — Стоимость"}, "price": "15000", "priceCurrency": "RUB"}, {"@type": "Offer", "itemOffered": {"@type": "Course", "name": "A  — мотоцикл — Стоимость"}, "price": "23000", "priceCurrency": "RUB"}, {"@type": "Offer", "itemOffered": {"@type": "Course", "name": "Теория  — Стоимость"}, "price": "8000", "priceCurrency": "RUB"}]}, "legalName": "ООО «ЮТИКА»"}</script>
+<style id="city-map-bg">
+/* Фон раздела «Как нас найти» — картинка города школы */
+#contacts .sec-bg{background:#1c2633}
+#contacts .sec-bg .a4bg{display:none}
+#contacts .sec-bg .city-bg{position:absolute;inset:0}
+#contacts .sec-bg .city-bg img{opacity:1;object-fit:cover;object-position:50% 60%}
+#contacts .sec-bg::after,html[data-theme="light"]:not([data-hc="1"]) #contacts .sec-bg::after{background:linear-gradient(180deg,rgba(10,22,40,.10) 0%,rgba(10,22,40,.30) 100%)}
+html[data-theme="dark"] #contacts .sec-bg::after{background:rgba(5,12,24,.55)}
+@media (max-width:760px){#contacts .sec-bg .city-bg img{object-position:50% 50%}}
+</style>
 </head>
 <body data-sec="0">
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
@@ -734,7 +744,7 @@ html[data-hc="1"] :focus-visible{outline:3px solid #ffe14d;outline-offset:2px}
 
 <!-- contacts -->
     <section class="sec nk-sec" id="contacts" data-title="nav_contacts">
-      <div class="sec-bg" aria-hidden="true"><div class="a4bg vl-scheme" aria-hidden="true"><svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" focusable="false"><path class="vls-wave" d="M0 820 C 300 790, 700 850, 1000 810 S 1400 780, 1600 820M0 860 C 400 830, 800 890, 1600 850"/><circle class="vls-ring" cx="800" cy="450" r="16" style="animation-delay:-0.00s"/><circle class="vls-pt" cx="800" cy="450" r="9"/><circle class="vls-hub" cx="800" cy="450" r="13"/></svg></div></div>
+      <div class="sec-bg" aria-hidden="true"><picture class="city-bg"><source media="(max-width:760px)" srcset="img/city-bg-m.jpg"><img src="img/city-bg.jpg" alt="" loading="lazy" decoding="async"></picture><div class="a4bg vl-scheme" aria-hidden="true"><svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" focusable="false"><path class="vls-wave" d="M0 820 C 300 790, 700 850, 1000 810 S 1400 780, 1600 820M0 860 C 400 830, 800 890, 1600 850"/><circle class="vls-ring" cx="800" cy="450" r="16" style="animation-delay:-0.00s"/><circle class="vls-pt" cx="800" cy="450" r="9"/><circle class="vls-hub" cx="800" cy="450" r="13"/></svg></div></div>
       <div class="sec-scroll"><div class="wrap">
         <div class="sec-head glass glow"><span class="kicker rv" style="--i:0">Контакты</span><h2 class="h2 rv" style="--i:1">Как нас найти</h2></div>
         <div class="contacts nk-contacts vl-contacts">
